@@ -85,7 +85,7 @@ public class Screen extends View implements AccelerometerListener, Runnable{
 		lstMeteors= new ArrayList<SpriteSimpleInfoData>();
 		mPaint = new Paint();
 		mPaint.setARGB(255, 255, 255, 255);
-		m_State = GameState.Count;
+		m_State = GameState.Game;
 		count=5;
 		setFocusable(true);
 		

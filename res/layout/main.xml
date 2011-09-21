@@ -5,7 +5,7 @@
     android:layout_height="fill_parent" android:background="#ffffff">
     <TextView android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_width="wrap_content" android:id="@+id/textView1" android:text="@string/explicacao" android:layout_gravity="center" android:textColor="#000000"></TextView>
     <TextView android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_width="wrap_content" android:id="@+id/textView2" android:layout_gravity="center" android:text="@string/fire" android:textColor="#000000"></TextView>
-    <ImageView android:src="@drawable/sample" android:id="@+id/imageView1" android:layout_weight="1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center"></ImageView>
+    <ImageView android:src="@drawable/sample" android:id="@+id/imageView1" android:layout_height="wrap_content" android:layout_gravity="center" android:layout_weight="1" android:layout_width="wrap_content"></ImageView>
     <ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/about_button" android:id="@+id/imgInfo" android:layout_gravity="right" android:background="@drawable/info"></ImageButton>
     <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="@string/iniciar" android:textAppearance="?android:attr/textAppearanceLarge" android:id="@+id/btIniciar"></Button>
 </LinearLayout>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">By Rogério-www.rogeriocs.com.br</string>
+    <string name="app_name">RotateShip</string>
     <string name="explicacao">Turn your body to turn your ship.</string>
     <string name="iniciar">Press here to START.</string>
     <string name="fire">To Fire touch in Screen. </string>
