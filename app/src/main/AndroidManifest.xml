@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="rogerio.magneticGame.com"
+      android:versionCode="1"
+      android:versionName="1.0"
+      >
+      <uses-sdk android:minSdkVersion="10" />
+     
+    <application android:label="@string/app_name" android:icon="@drawable/nav" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+        <activity android:label="@string/app_name" android:screenOrientation="landscape" android:name="MagneticGame">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="Main" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"></action>
+                <category android:name="android.intent.category.LAUNCHER"></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="About" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"></action>
+                <category android:name="android.intent.category.LAUNCHER"></category>
+            </intent-filter>
+        </activity>
+
+    </application>
+
+
+</manifest> 
