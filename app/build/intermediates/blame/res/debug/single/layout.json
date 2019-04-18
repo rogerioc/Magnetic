@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Projetos/Android/Magnetic/app/build/intermediates/res/merged/debug/layout/main.xml",
+        "source": "/Projetos/Android/Magnetic/app/src/main/res/layout/main.xml"
+    },
+    {
+        "merged": "/Projetos/Android/Magnetic/app/build/intermediates/res/merged/debug/layout/about.xml",
+        "source": "/Projetos/Android/Magnetic/app/src/main/res/layout/about.xml"
+    }
+]

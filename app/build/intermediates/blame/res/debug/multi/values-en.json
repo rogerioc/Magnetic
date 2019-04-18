@@ -1,0 +1,83 @@
+[
+    {
+        "outputFile": "/Projetos/Android/Magnetic/app/build/intermediates/res/merged/debug/values-en/values-en.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 47,
+                    "endOffset": 98
+                },
+                "from": {
+                    "file": "/Projetos/Android/Magnetic/app/src/main/res/values-en/strings.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 47,
+                        "endOffset": 98
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 103,
+                    "endColumn": 72,
+                    "endOffset": 171
+                },
+                "from": {
+                    "file": "/Projetos/Android/Magnetic/app/src/main/res/values-en/strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 103,
+                        "endColumn": 72,
+                        "endOffset": 171
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 176,
+                    "endColumn": 58,
+                    "endOffset": 230
+                },
+                "from": {
+                    "file": "/Projetos/Android/Magnetic/app/src/main/res/values-en/strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 233,
+                        "endColumn": 58,
+                        "endOffset": 287
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 235,
+                    "endColumn": 56,
+                    "endOffset": 287
+                },
+                "from": {
+                    "file": "/Projetos/Android/Magnetic/app/src/main/res/values-en/strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 176,
+                        "endColumn": 56,
+                        "endOffset": 228
+                    }
+                }
+            }
+        ]
+    }
+]
