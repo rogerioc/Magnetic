@@ -1,0 +1,54 @@
+[
+    {
+        "merged": "/Projetos/Android/Magnetic/app/build/intermediates/res/merged/debug/drawable_info.png.flat",
+        "source": "/Projetos/Android/Magnetic/app/src/main/res/drawable/info.png"
+    },
+    {
+        "merged": "/Projetos/Android/Magnetic/app/build/intermediates/res/merged/debug/layout_main.xml.flat",
+        "source": "/Projetos/Android/Magnetic/app/src/main/res/layout/main.xml"
+    },
+    {
+        "merged": "/Projetos/Android/Magnetic/app/build/intermediates/res/merged/debug/drawable_asteroid01.png.flat",
+        "source": "/Projetos/Android/Magnetic/app/src/main/res/drawable/asteroid01.png"
+    },
+    {
+        "merged": "/Projetos/Android/Magnetic/app/build/intermediates/res/merged/debug/drawable_nav.png.flat",
+        "source": "/Projetos/Android/Magnetic/app/src/main/res/drawable/nav.png"
+    },
+    {
+        "merged": "/Projetos/Android/Magnetic/app/build/intermediates/res/merged/debug/drawable_explode2.png.flat",
+        "source": "/Projetos/Android/Magnetic/app/src/main/res/drawable/explode2.png"
+    },
+    {
+        "merged": "/Projetos/Android/Magnetic/app/build/intermediates/res/merged/debug/drawable_infopress.png.flat",
+        "source": "/Projetos/Android/Magnetic/app/src/main/res/drawable/infopress.png"
+    },
+    {
+        "merged": "/Projetos/Android/Magnetic/app/build/intermediates/res/merged/debug/layout_about.xml.flat",
+        "source": "/Projetos/Android/Magnetic/app/src/main/res/layout/about.xml"
+    },
+    {
+        "merged": "/Projetos/Android/Magnetic/app/build/intermediates/res/merged/debug/drawable_explode1.png.flat",
+        "source": "/Projetos/Android/Magnetic/app/src/main/res/drawable/explode1.png"
+    },
+    {
+        "merged": "/Projetos/Android/Magnetic/app/build/intermediates/res/merged/debug/drawable_laser.png.flat",
+        "source": "/Projetos/Android/Magnetic/app/src/main/res/drawable/laser.png"
+    },
+    {
+        "merged": "/Projetos/Android/Magnetic/app/build/intermediates/res/merged/debug/drawable_explode4.png.flat",
+        "source": "/Projetos/Android/Magnetic/app/src/main/res/drawable/explode4.png"
+    },
+    {
+        "merged": "/Projetos/Android/Magnetic/app/build/intermediates/res/merged/debug/drawable_sample.png.flat",
+        "source": "/Projetos/Android/Magnetic/app/src/main/res/drawable/sample.png"
+    },
+    {
+        "merged": "/Projetos/Android/Magnetic/app/build/intermediates/res/merged/debug/drawable_about_button.xml.flat",
+        "source": "/Projetos/Android/Magnetic/app/src/main/res/drawable/about_button.xml"
+    },
+    {
+        "merged": "/Projetos/Android/Magnetic/app/build/intermediates/res/merged/debug/drawable_explode3.png.flat",
+        "source": "/Projetos/Android/Magnetic/app/src/main/res/drawable/explode3.png"
+    }
+]

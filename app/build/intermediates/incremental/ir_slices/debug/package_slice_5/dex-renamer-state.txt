@@ -1,0 +1,4 @@
+#Thu Jul 04 21:35:43 BRT 2019
+base.0=/Projetos/Android/Magnetic/app/build/intermediates/transforms/dexMerger/debug/5
+path.0=classes.dex
+renamed.0=classes.dex

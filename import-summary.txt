@@ -1,0 +1,99 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* .DS_Store
+* .idea/
+* .idea/.name
+* .idea/compiler.xml
+* .idea/copyright/
+* .idea/copyright/profiles_settings.xml
+* .idea/encodings.xml
+* .idea/libraries/
+* .idea/libraries/rogeriolib.xml
+* .idea/misc.xml
+* .idea/modules.xml
+* .idea/scopes/
+* .idea/scopes/scope_settings.xml
+* .idea/vcs.xml
+* .idea/workspace.xml
+* Magnetic.iml
+* README
+* out/
+* out/production/
+* out/production/Magnetic/
+* out/production/Magnetic/Magnetic.apk
+* out/production/Magnetic/Magnetic.unaligned.apk
+* out/production/Magnetic/libs/
+* out/production/Magnetic/libs/com/
+* out/production/Magnetic/libs/com/rogerio/
+* out/production/Magnetic/libs/com/rogerio/utils/
+* out/production/Magnetic/libs/com/rogerio/utils/AccType.class
+* out/production/Magnetic/libs/com/rogerio/utils/AccelerometerListener.class
+* out/production/Magnetic/libs/com/rogerio/utils/AccelerometerManager$1.class
+* out/production/Magnetic/libs/com/rogerio/utils/AccelerometerManager$2.class
+* out/production/Magnetic/libs/com/rogerio/utils/AccelerometerManager.class
+* out/production/Magnetic/libs/com/rogerio/utils/AudioClip$1.class
+* out/production/Magnetic/libs/com/rogerio/utils/AudioClip.class
+* out/production/Magnetic/libs/com/rogerio/utils/GamesFX.class
+* out/production/Magnetic/libs/com/rogerio/utils/ImgAnimation.class
+* out/production/Magnetic/libs/com/rogerio/utils/ObjImgAnim.class
+* out/production/Magnetic/libs/com/rogerio/utils/ObjetosImg.class
+* out/production/Magnetic/libs/com/rogerio/utils/Physics.class
+* out/production/Magnetic/libs/com/rogerio/utils/SoundFx.class
+* out/production/Magnetic/libs/com/rogerio/utils/Sounds.class
+* out/production/Magnetic/libs/com/rogerio/utils/Sprite.class
+* out/production/Magnetic/libs/com/rogerio/utils/SpriteSimpleInfoData.class
+* out/production/Magnetic/libs/com/rogerio/utils/Vector2.class
+* out/production/Magnetic/rogerio/
+* out/production/Magnetic/rogerio/magneticGame/
+* out/production/Magnetic/rogerio/magneticGame/com/
+* out/production/Magnetic/rogerio/magneticGame/com/About.class
+* out/production/Magnetic/rogerio/magneticGame/com/BuildConfig.class
+* out/production/Magnetic/rogerio/magneticGame/com/GameState.class
+* out/production/Magnetic/rogerio/magneticGame/com/MagneticGame.class
+* out/production/Magnetic/rogerio/magneticGame/com/Main$1.class
+* out/production/Magnetic/rogerio/magneticGame/com/Main$2.class
+* out/production/Magnetic/rogerio/magneticGame/com/Main.class
+* out/production/Magnetic/rogerio/magneticGame/com/R$attr.class
+* out/production/Magnetic/rogerio/magneticGame/com/R$drawable.class
+* out/production/Magnetic/rogerio/magneticGame/com/R$id.class
+* out/production/Magnetic/rogerio/magneticGame/com/R$layout.class
+* out/production/Magnetic/rogerio/magneticGame/com/R$string.class
+* out/production/Magnetic/rogerio/magneticGame/com/R.class
+* out/production/Magnetic/rogerio/magneticGame/com/Screen$1.class
+* out/production/Magnetic/rogerio/magneticGame/com/Screen$2.class
+* out/production/Magnetic/rogerio/magneticGame/com/Screen.class
+* proguard.cfg
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => app/src/main/AndroidManifest.xml
+* res/ => app/src/main/res/
+* src/ => app/src/main/java/
+* src/.DS_Store => app/src/main/resources/.DS_Store
+* src/rogerio/.DS_Store => app/src/main/resources/rogerio/.DS_Store
+* src/rogerio/magneticGame/.DS_Store => app/src/main/resources/rogerio/magneticGame/.DS_Store
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

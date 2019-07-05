@@ -1,0 +1,81 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Projetos/Android/Magnetic/app/src/main/AndroidManifest.xml:2:1-31:12
+INJECTED from /Projetos/Android/Magnetic/app/src/main/AndroidManifest.xml:2:1-31:12
+INJECTED from /Projetos/Android/Magnetic/app/src/main/AndroidManifest.xml:2:1-31:12
+INJECTED from /Projetos/Android/Magnetic/app/src/main/AndroidManifest.xml:2:1-31:12
+INJECTED from /Projetos/Android/Magnetic/app/src/main/AndroidManifest.xml:2:1-31:12
+INJECTED from /Projetos/Android/Magnetic/app/src/main/AndroidManifest.xml:2:1-31:12
+INJECTED from /Projetos/Android/Magnetic/app/src/main/AndroidManifest.xml:2:1-31:12
+	package
+		ADDED from /Projetos/Android/Magnetic/app/src/main/AndroidManifest.xml:3:7-41
+		INJECTED from /Projetos/Android/Magnetic/app/src/main/AndroidManifest.xml
+		INJECTED from /Projetos/Android/Magnetic/app/src/main/AndroidManifest.xml
+	android:versionName
+		ADDED from /Projetos/Android/Magnetic/app/src/main/AndroidManifest.xml:5:7-32
+		INJECTED from /Projetos/Android/Magnetic/app/src/main/AndroidManifest.xml
+		INJECTED from /Projetos/Android/Magnetic/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Projetos/Android/Magnetic/app/src/main/AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from /Projetos/Android/Magnetic/app/src/main/AndroidManifest.xml:4:7-30
+		INJECTED from /Projetos/Android/Magnetic/app/src/main/AndroidManifest.xml
+		INJECTED from /Projetos/Android/Magnetic/app/src/main/AndroidManifest.xml
+application
+ADDED from /Projetos/Android/Magnetic/app/src/main/AndroidManifest.xml:8:5-28:19
+	android:label
+		ADDED from /Projetos/Android/Magnetic/app/src/main/AndroidManifest.xml:8:18-50
+	android:icon
+		ADDED from /Projetos/Android/Magnetic/app/src/main/AndroidManifest.xml:8:51-79
+	android:theme
+		ADDED from /Projetos/Android/Magnetic/app/src/main/AndroidManifest.xml:8:80-138
+activity#rogerio.magneticGame.com.MagneticGame
+ADDED from /Projetos/Android/Magnetic/app/src/main/AndroidManifest.xml:9:9-14:20
+	android:screenOrientation
+		ADDED from /Projetos/Android/Magnetic/app/src/main/AndroidManifest.xml:9:52-89
+	android:label
+		ADDED from /Projetos/Android/Magnetic/app/src/main/AndroidManifest.xml:9:19-51
+	android:name
+		ADDED from /Projetos/Android/Magnetic/app/src/main/AndroidManifest.xml:9:90-117
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Projetos/Android/Magnetic/app/src/main/AndroidManifest.xml:10:13-13:29
+action#android.intent.action.MAIN
+ADDED from /Projetos/Android/Magnetic/app/src/main/AndroidManifest.xml:11:17-68
+	android:name
+		ADDED from /Projetos/Android/Magnetic/app/src/main/AndroidManifest.xml:11:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Projetos/Android/Magnetic/app/src/main/AndroidManifest.xml:12:17-77
+	android:name
+		ADDED from /Projetos/Android/Magnetic/app/src/main/AndroidManifest.xml:12:27-74
+activity#rogerio.magneticGame.com.Main
+ADDED from /Projetos/Android/Magnetic/app/src/main/AndroidManifest.xml:15:9-20:20
+	android:screenOrientation
+		ADDED from /Projetos/Android/Magnetic/app/src/main/AndroidManifest.xml:15:39-76
+	android:name
+		ADDED from /Projetos/Android/Magnetic/app/src/main/AndroidManifest.xml:15:19-38
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.LAUNCHER
+ADDED from /Projetos/Android/Magnetic/app/src/main/AndroidManifest.xml:16:13-19:29
+action#android.intent.action.VIEW
+ADDED from /Projetos/Android/Magnetic/app/src/main/AndroidManifest.xml:17:17-76
+	android:name
+		ADDED from /Projetos/Android/Magnetic/app/src/main/AndroidManifest.xml:17:25-66
+activity#rogerio.magneticGame.com.About
+ADDED from /Projetos/Android/Magnetic/app/src/main/AndroidManifest.xml:21:9-26:20
+	android:screenOrientation
+		ADDED from /Projetos/Android/Magnetic/app/src/main/AndroidManifest.xml:21:40-77
+	android:name
+		ADDED from /Projetos/Android/Magnetic/app/src/main/AndroidManifest.xml:21:19-39
+uses-sdk
+INJECTED from /Projetos/Android/Magnetic/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Projetos/Android/Magnetic/app/src/main/AndroidManifest.xml
+INJECTED from /Projetos/Android/Magnetic/app/src/main/AndroidManifest.xml
+INJECTED from /Projetos/Android/Magnetic/app/src/main/AndroidManifest.xml
+INJECTED from /Projetos/Android/Magnetic/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Projetos/Android/Magnetic/app/src/main/AndroidManifest.xml
+		ADDED from /Projetos/Android/Magnetic/app/src/main/AndroidManifest.xml
+		INJECTED from /Projetos/Android/Magnetic/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Projetos/Android/Magnetic/app/src/main/AndroidManifest.xml
+		ADDED from /Projetos/Android/Magnetic/app/src/main/AndroidManifest.xml
+		INJECTED from /Projetos/Android/Magnetic/app/src/main/AndroidManifest.xml
