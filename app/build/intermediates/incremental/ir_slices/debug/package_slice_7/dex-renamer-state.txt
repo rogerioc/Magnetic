@@ -1,4 +1,4 @@
-#Thu Apr 18 00:36:54 BRT 2019
+#Sat Jul 20 14:07:08 BRT 2019
 base.0=/Volumes/Rogerio/Projetos/Android/Magnetic/app/build/intermediates/transforms/dexMerger/debug/7
 path.0=classes.dex
 renamed.0=classes.dex

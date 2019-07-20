@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="app_name">RotateShip</string>
-    <string name="explicacao">Gire seu corpo para girar a nave.</string>
-    <string name="fire">Toque na tela para atirar.</string>
-    <string name="iniciar">Clique aqui para INICIAR</string>
-</resources>
