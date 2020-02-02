@@ -1,0 +1,5 @@
+app/build/*
+gen/*
+gradle/*
+.gradle/*
+.idea/*
