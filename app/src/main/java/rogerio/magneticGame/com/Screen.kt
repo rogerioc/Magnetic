@@ -21,8 +21,17 @@ import android.widget.Toast
 import libs.com.rogerio.utils.*
 import rogerio.magneticGame.*
 
+
+
+
 class Screen(private val mContext: Context) : View(mContext), AccelerometerListener, Runnable {
 
+    companion object {
+        const val fireThreshold = 20
+        const val meteorThreshold = 10
+    }
+    private var fireSpeed = 6.0
+    private var meteorSpeed = 6.0
     internal var iniX: Float = 0.toFloat()
     internal var posicaoY: Float = 0.toFloat()
     internal var iniY: Float = 0.toFloat()
@@ -43,7 +52,7 @@ class Screen(private val mContext: Context) : View(mContext), AccelerometerListe
     private val lstMeteors: MutableList<SpriteSimpleInfoData>
     private val lstExplodes: MutableList<SpriteSimpleInfoData>
     private var mMeteor: Bitmap? = null
-    private val mMetorsLength = 10
+    private val mMetorsLength = fireThreshold
     private val mNivel = 0
     private val idExplodes: ArrayList<Int>
     private val mPaint: Paint
@@ -231,8 +240,10 @@ class Screen(private val mContext: Context) : View(mContext), AccelerometerListe
         mSpSpaceShip.y = posicaoY.toInt()
         mSpSpaceShip.h = mSpaceShip.height
         mSpSpaceShip.w = mSpaceShip.width
-        generateMeteorsList()
+        fireSpeed = (larguraTela/alturaTela).toDouble() * fireThreshold
+        meteorSpeed = (larguraTela/alturaTela).toDouble() * meteorThreshold
         m_iniTime = SystemClock.currentThreadTimeMillis()
+        generateMeteorsList()
         val th = Thread(this)
         th.start()
     }
@@ -249,7 +260,7 @@ class Screen(private val mContext: Context) : View(mContext), AccelerometerListe
         pts[7] = pts[3]
         pts[8] = pts[6]
         pts[9] = pts[7]
-        pts[10] = pts[0]
+        pts[fireThreshold] = pts[0]
         pts[11] = pts[1]
         return pts
     }
@@ -271,7 +282,7 @@ class Screen(private val mContext: Context) : View(mContext), AccelerometerListe
         val spBullet = SpriteSimpleInfoData()
         spBullet.x = mSpSpaceShip.x + mSpSpaceShip.w / 2
         spBullet.y = mSpSpaceShip.y + mSpSpaceShip.h / 2
-        spBullet.speed = 6.0
+        spBullet.speed = fireSpeed
         spBullet.rotate = mSpSpaceShip.rotate
         spBullet.deltaX = 2 * Math.sin(mSpSpaceShip.rotate.toDouble())
         spBullet.deltaY = 2 * Math.cos(mSpSpaceShip.rotate.toDouble())
@@ -441,7 +452,7 @@ class Screen(private val mContext: Context) : View(mContext), AccelerometerListe
 
             m.w = mMeteor!!.width
             m.h = mMeteor!!.height
-            m.speed = 2.0
+            m.speed = meteorSpeed
             /*if (i % 4 == 0) {
 				m.speed += mNivel * 2;
 			}*/
