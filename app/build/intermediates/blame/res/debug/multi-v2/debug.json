@@ -1,32 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Volumes/Rogerio/Projetos/Android/Magnetic/app/build/intermediates/res/merged/debug/values-en_values-en.arsc.flat",
+            "outputFile": "/Users/rogeriocsantos/Projetos/Android/Magnetic/app/build/intermediates/res/merged/debug/values-pt-rBR_values-pt-rBR.arsc.flat",
             "map": [
                 {
-                    "source": "/Volumes/Rogerio/Projetos/Android/Magnetic/app/src/main/res/values-en/strings.xml",
-                    "from": {
-                        "startLines": "2,3,5,4",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,103,233,176",
-                        "endColumns": "47,72,58,56",
-                        "endOffsets": "98,171,287,228"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,103,176,235",
-                        "endColumns": "47,72,58,56",
-                        "endOffsets": "98,171,230,287"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "/Volumes/Rogerio/Projetos/Android/Magnetic/app/build/intermediates/res/merged/debug/values-pt-rBR_values-pt-rBR.arsc.flat",
-            "map": [
-                {
-                    "source": "/Volumes/Rogerio/Projetos/Android/Magnetic/app/src/main/res/values-pt-rBR/strings.xml",
+                    "source": "/Users/rogeriocsantos/Projetos/Android/Magnetic/app/src/main/res/values-pt-rBR/strings.xml",
                     "from": {
                         "startLines": "2,3,5,4",
                         "startColumns": "4,4,4,4",
@@ -45,10 +23,10 @@
             ]
         },
         {
-            "outputFile": "/Volumes/Rogerio/Projetos/Android/Magnetic/app/build/intermediates/res/merged/debug/values_values.arsc.flat",
+            "outputFile": "/Users/rogeriocsantos/Projetos/Android/Magnetic/app/build/intermediates/res/merged/debug/values_values.arsc.flat",
             "map": [
                 {
-                    "source": "/Volumes/Rogerio/Projetos/Android/Magnetic/app/src/main/res/values/strings.xml",
+                    "source": "/Users/rogeriocsantos/Projetos/Android/Magnetic/app/src/main/res/values/strings.xml",
                     "from": {
                         "startLines": "2,3,5,4",
                         "startColumns": "4,4,4,4",
@@ -62,6 +40,28 @@
                         "startOffsets": "55,103,176,234",
                         "endColumns": "47,72,57,56",
                         "endOffsets": "98,171,229,286"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/rogeriocsantos/Projetos/Android/Magnetic/app/build/intermediates/res/merged/debug/values-en_values-en.arsc.flat",
+            "map": [
+                {
+                    "source": "/Users/rogeriocsantos/Projetos/Android/Magnetic/app/src/main/res/values-en/strings.xml",
+                    "from": {
+                        "startLines": "2,3,5,4",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,103,233,176",
+                        "endColumns": "47,72,58,56",
+                        "endOffsets": "98,171,287,228"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,103,176,235",
+                        "endColumns": "47,72,58,56",
+                        "endOffsets": "98,171,230,287"
                     }
                 }
             ]

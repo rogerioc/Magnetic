@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Volumes/Rogerio/Projetos/Android/Magnetic/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en/values-en.xml",
+            "outputFile": "/Users/rogeriocsantos/Projetos/Android/Magnetic/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en/values-en.xml",
             "map": [
                 {
-                    "source": "/Volumes/Rogerio/Projetos/Android/Magnetic/app/src/main/res/values-en/strings.xml",
+                    "source": "/Users/rogeriocsantos/Projetos/Android/Magnetic/app/src/main/res/values-en/strings.xml",
                     "from": {
                         "startLines": "2,3,5,4",
                         "startColumns": "4,4,4,4",

@@ -1,54 +1,54 @@
 [
     {
-        "merged": "/Volumes/Rogerio/Projetos/Android/Magnetic/app/build/intermediates/res/merged/debug/drawable_explode3.png.flat",
-        "source": "/Volumes/Rogerio/Projetos/Android/Magnetic/app/src/main/res/drawable/explode3.png"
+        "merged": "/Users/rogeriocsantos/Projetos/Android/Magnetic/app/build/intermediates/res/merged/debug/layout_about.xml.flat",
+        "source": "/Users/rogeriocsantos/Projetos/Android/Magnetic/app/src/main/res/layout/about.xml"
     },
     {
-        "merged": "/Volumes/Rogerio/Projetos/Android/Magnetic/app/build/intermediates/res/merged/debug/layout_about.xml.flat",
-        "source": "/Volumes/Rogerio/Projetos/Android/Magnetic/app/src/main/res/layout/about.xml"
+        "merged": "/Users/rogeriocsantos/Projetos/Android/Magnetic/app/build/intermediates/res/merged/debug/drawable_explode1.png.flat",
+        "source": "/Users/rogeriocsantos/Projetos/Android/Magnetic/app/src/main/res/drawable/explode1.png"
     },
     {
-        "merged": "/Volumes/Rogerio/Projetos/Android/Magnetic/app/build/intermediates/res/merged/debug/drawable_explode4.png.flat",
-        "source": "/Volumes/Rogerio/Projetos/Android/Magnetic/app/src/main/res/drawable/explode4.png"
+        "merged": "/Users/rogeriocsantos/Projetos/Android/Magnetic/app/build/intermediates/res/merged/debug/drawable_explode2.png.flat",
+        "source": "/Users/rogeriocsantos/Projetos/Android/Magnetic/app/src/main/res/drawable/explode2.png"
     },
     {
-        "merged": "/Volumes/Rogerio/Projetos/Android/Magnetic/app/build/intermediates/res/merged/debug/drawable_laser.png.flat",
-        "source": "/Volumes/Rogerio/Projetos/Android/Magnetic/app/src/main/res/drawable/laser.png"
+        "merged": "/Users/rogeriocsantos/Projetos/Android/Magnetic/app/build/intermediates/res/merged/debug/drawable_info.png.flat",
+        "source": "/Users/rogeriocsantos/Projetos/Android/Magnetic/app/src/main/res/drawable/info.png"
     },
     {
-        "merged": "/Volumes/Rogerio/Projetos/Android/Magnetic/app/build/intermediates/res/merged/debug/drawable_explode2.png.flat",
-        "source": "/Volumes/Rogerio/Projetos/Android/Magnetic/app/src/main/res/drawable/explode2.png"
+        "merged": "/Users/rogeriocsantos/Projetos/Android/Magnetic/app/build/intermediates/res/merged/debug/drawable_infopress.png.flat",
+        "source": "/Users/rogeriocsantos/Projetos/Android/Magnetic/app/src/main/res/drawable/infopress.png"
     },
     {
-        "merged": "/Volumes/Rogerio/Projetos/Android/Magnetic/app/build/intermediates/res/merged/debug/drawable_explode1.png.flat",
-        "source": "/Volumes/Rogerio/Projetos/Android/Magnetic/app/src/main/res/drawable/explode1.png"
+        "merged": "/Users/rogeriocsantos/Projetos/Android/Magnetic/app/build/intermediates/res/merged/debug/drawable_explode3.png.flat",
+        "source": "/Users/rogeriocsantos/Projetos/Android/Magnetic/app/src/main/res/drawable/explode3.png"
     },
     {
-        "merged": "/Volumes/Rogerio/Projetos/Android/Magnetic/app/build/intermediates/res/merged/debug/drawable_info.png.flat",
-        "source": "/Volumes/Rogerio/Projetos/Android/Magnetic/app/src/main/res/drawable/info.png"
+        "merged": "/Users/rogeriocsantos/Projetos/Android/Magnetic/app/build/intermediates/res/merged/debug/drawable_nav.png.flat",
+        "source": "/Users/rogeriocsantos/Projetos/Android/Magnetic/app/src/main/res/drawable/nav.png"
     },
     {
-        "merged": "/Volumes/Rogerio/Projetos/Android/Magnetic/app/build/intermediates/res/merged/debug/drawable_sample.png.flat",
-        "source": "/Volumes/Rogerio/Projetos/Android/Magnetic/app/src/main/res/drawable/sample.png"
+        "merged": "/Users/rogeriocsantos/Projetos/Android/Magnetic/app/build/intermediates/res/merged/debug/drawable_explode4.png.flat",
+        "source": "/Users/rogeriocsantos/Projetos/Android/Magnetic/app/src/main/res/drawable/explode4.png"
     },
     {
-        "merged": "/Volumes/Rogerio/Projetos/Android/Magnetic/app/build/intermediates/res/merged/debug/layout_main.xml.flat",
-        "source": "/Volumes/Rogerio/Projetos/Android/Magnetic/app/src/main/res/layout/main.xml"
+        "merged": "/Users/rogeriocsantos/Projetos/Android/Magnetic/app/build/intermediates/res/merged/debug/drawable_asteroid01.png.flat",
+        "source": "/Users/rogeriocsantos/Projetos/Android/Magnetic/app/src/main/res/drawable/asteroid01.png"
     },
     {
-        "merged": "/Volumes/Rogerio/Projetos/Android/Magnetic/app/build/intermediates/res/merged/debug/drawable_nav.png.flat",
-        "source": "/Volumes/Rogerio/Projetos/Android/Magnetic/app/src/main/res/drawable/nav.png"
+        "merged": "/Users/rogeriocsantos/Projetos/Android/Magnetic/app/build/intermediates/res/merged/debug/layout_main.xml.flat",
+        "source": "/Users/rogeriocsantos/Projetos/Android/Magnetic/app/src/main/res/layout/main.xml"
     },
     {
-        "merged": "/Volumes/Rogerio/Projetos/Android/Magnetic/app/build/intermediates/res/merged/debug/drawable_infopress.png.flat",
-        "source": "/Volumes/Rogerio/Projetos/Android/Magnetic/app/src/main/res/drawable/infopress.png"
+        "merged": "/Users/rogeriocsantos/Projetos/Android/Magnetic/app/build/intermediates/res/merged/debug/drawable_sample.png.flat",
+        "source": "/Users/rogeriocsantos/Projetos/Android/Magnetic/app/src/main/res/drawable/sample.png"
     },
     {
-        "merged": "/Volumes/Rogerio/Projetos/Android/Magnetic/app/build/intermediates/res/merged/debug/drawable_about_button.xml.flat",
-        "source": "/Volumes/Rogerio/Projetos/Android/Magnetic/app/src/main/res/drawable/about_button.xml"
+        "merged": "/Users/rogeriocsantos/Projetos/Android/Magnetic/app/build/intermediates/res/merged/debug/drawable_laser.png.flat",
+        "source": "/Users/rogeriocsantos/Projetos/Android/Magnetic/app/src/main/res/drawable/laser.png"
     },
     {
-        "merged": "/Volumes/Rogerio/Projetos/Android/Magnetic/app/build/intermediates/res/merged/debug/drawable_asteroid01.png.flat",
-        "source": "/Volumes/Rogerio/Projetos/Android/Magnetic/app/src/main/res/drawable/asteroid01.png"
+        "merged": "/Users/rogeriocsantos/Projetos/Android/Magnetic/app/build/intermediates/res/merged/debug/drawable_about_button.xml.flat",
+        "source": "/Users/rogeriocsantos/Projetos/Android/Magnetic/app/src/main/res/drawable/about_button.xml"
     }
 ]
