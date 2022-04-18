@@ -1,24 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-      package="rogerio.magneticGame.com"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="rogerio.magneticGame.com"
       android:versionCode="2"
       android:versionName="2.0"
       >
      
     <application android:label="@string/app_name" android:icon="@drawable/nav" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
-        <activity android:label="@string/app_name" android:screenOrientation="landscape" android:name="MagneticGame">
+        <activity android:label="@string/app_name" android:screenOrientation="landscape" android:name="MagneticGame"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="Main" android:screenOrientation="landscape">
+        <activity android:name="Main" android:screenOrientation="landscape"
+            android:exported="false"
+            tools:ignore="AppLinkUrlError">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW"></action>
                 <category android:name="android.intent.category.LAUNCHER"></category>
             </intent-filter>
         </activity>
-        <activity android:name="About" android:screenOrientation="landscape">
+        <activity android:name="About" android:screenOrientation="landscape"
+            android:exported="false"
+            tools:ignore="AppLinkUrlError">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW"></action>
                 <category android:name="android.intent.category.LAUNCHER"></category>

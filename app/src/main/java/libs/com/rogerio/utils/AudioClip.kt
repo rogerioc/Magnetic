@@ -25,9 +25,9 @@ class AudioClip(ctx: Context, resID: Int) : Sounds(ctx) {
         volume()
 
         mPlayer = MediaPlayer.create(ctx, resID)
-        mPlayer!!.setVolume(leftVolume, rightVolume)
+        mPlayer?.setVolume(leftVolume, rightVolume)
 
-        mPlayer!!.setOnCompletionListener { mp ->
+        mPlayer?.setOnCompletionListener { mp ->
             mPlaying = false
             if (mLoop) {
                 Log.i(tag, "AudioClip loop $name")
@@ -45,9 +45,9 @@ class AudioClip(ctx: Context, resID: Int) : Sounds(ctx) {
 
         if (mPlayer != null) {
             mPlaying = true
-            mPlayer!!.setVolume(leftVolume, rightVolume)
+            mPlayer?.setVolume(leftVolume, rightVolume)
 
-            mPlayer!!.start()
+            mPlayer?.start()
         }
     }
 
@@ -57,7 +57,7 @@ class AudioClip(ctx: Context, resID: Int) : Sounds(ctx) {
             mLoop = false
             if (mPlaying) {
                 mPlaying = false
-                mPlayer!!.pause()
+                mPlayer?.pause()
             }
 
         } catch (e: Exception) {
@@ -70,13 +70,13 @@ class AudioClip(ctx: Context, resID: Int) : Sounds(ctx) {
     fun loop() {
         mLoop = true
         mPlaying = true
-        mPlayer!!.start()
+        mPlayer?.start()
 
     }
 
     fun release() {
         if (mPlayer != null) {
-            mPlayer!!.release()
+            mPlayer?.release()
             mPlayer = null
         }
     }

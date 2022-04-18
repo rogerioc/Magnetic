@@ -1,4 +1,0 @@
-#Sun Feb 02 22:11:01 BRST 2020
-base.0=/Users/rogeriocsantos/Projetos/Android/Magnetic/app/build/intermediates/dex/debug/mergeDexDebug/out/classes.dex
-path.0=classes.dex
-renamed.0=classes.dex

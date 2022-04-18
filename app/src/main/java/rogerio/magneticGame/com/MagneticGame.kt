@@ -13,7 +13,7 @@ class MagneticGame : Activity() {
         setContentView(mScreen)
     }
 
-    override fun onDestroy() {
+    public override fun onDestroy() {
         // TODO Auto-generated method stub
         super.onDestroy()
         mScreen.onDestroy()

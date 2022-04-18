@@ -18,13 +18,11 @@ object AccelerometerManager {
     private var interval = 1000
 
     private var sensor: Sensor? = null
+    private var sensors: MutableList<Sensor>? = null
     private var sensorManager: SensorManager? = null
     // you could use an OrientationListener array instead
     // if you plans to use more than one listener
     private var listener: AccelerometerListener? = null
-
-    /** indicates whether or not Accelerometer Sensor is supported  */
-    private var supported: Boolean? = null
     /** indicates whether or not Accelerometer Sensor is running  */
     /**
      * Returns true if the manager is listening to orientation changes
@@ -39,17 +37,8 @@ object AccelerometerManager {
      */
     val isSupported: Boolean
         get() {
-            if (supported == null) {
-                if (context != null) {
-                    sensorManager = context!!.getSystemService(Context.SENSOR_SERVICE) as SensorManager
-                    val sensors = sensorManager!!.getSensorList(
-                            accType())
-                    supported = sensors.size > 0
-                } else {
-                    supported = java.lang.Boolean.FALSE
-                }
-            }
-            return supported!!
+            val sensors = sensors()
+            return sensors?.size ?: 0  > 0
         }
 
     /**
@@ -94,8 +83,8 @@ object AccelerometerManager {
             } else {
                 timeDiff = now - lastUpdate
                 if (timeDiff > 0) {
-                    val `val` = Math.abs(x + y + z - lastX - lastY - lastZ) / timeDiff
-                    force = `val`.toInt()
+                    val value = Math.abs(x + y + z - lastX - lastY - lastZ) / timeDiff
+                    force = value.toInt()
                     if (force > threshold) {
                         if (now - lastShake >= interval) {
                             // trigger shake event
@@ -125,9 +114,7 @@ object AccelerometerManager {
     fun stopListening() {
         isListening = false
         try {
-            if (sensorManager != null && sensorEventListener != null) {
-                sensorManager!!.unregisterListener(sensorEventListener)
-            }
+            sensorManager?.unregisterListener(sensorEventListener)
         } catch (e: Exception) {
         }
 
@@ -160,14 +147,12 @@ object AccelerometerManager {
      */
     fun startListening(
             accelerometerListener: AccelerometerListener) {
-        sensorManager = context!!.getSystemService(Context.SENSOR_SERVICE) as SensorManager
-        val sensors = sensorManager!!.getSensorList(
-                accType())
-        if (sensors.size > 0) {
-            sensor = sensors[0]
-            isListening = sensorManager!!.registerListener(
+        sensors()
+        if (sensors?.size ?: 0 > 0) {
+            sensor = sensors?.get(0)
+            isListening = sensorManager?.registerListener(
                     sensorEventListener, sensor,
-                    SensorManager.SENSOR_DELAY_GAME)
+                    SensorManager.SENSOR_DELAY_GAME) ?: false
             listener = accelerometerListener
         }
     }
@@ -188,6 +173,15 @@ object AccelerometerManager {
         configure(threshold, interval)
         startListening(accelerometerListener)
     }
+    private fun sensors(): MutableList<Sensor>? {
+        if (sensorManager == null || sensors == null) {
+            sensorManager = context?.getSystemService(Context.SENSOR_SERVICE) as SensorManager
+            sensors = sensorManager?.getSensorList(AccelerometerManager.accType())
+        }
+        return sensors
+    }
 }
+
+
 
 

@@ -1,6 +1,7 @@
-apply plugin: 'com.android.application'
-apply plugin: 'kotlin-android-extensions'
-apply plugin: 'kotlin-android'
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
 
 android {
     compileSdkVersion 29
@@ -8,7 +9,7 @@ android {
     defaultConfig {
         applicationId "rogerio.magneticGame.com"
         minSdkVersion 16
-        targetSdkVersion 29
+        targetSdk 31
     }
 
     buildTypes {
@@ -18,14 +19,14 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = kotlin_version
-        targetCompatibility = kotlin_version
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
     }
     buildToolsVersion = '29.0.2'
 }
 repositories {
     mavenCentral()
-}
-dependencies {
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
