@@ -4,8 +4,7 @@ plugins {
 }
 
 android {
-    compileSdkVersion 29
-
+    compileSdkVersion 31
     defaultConfig {
         applicationId "rogerio.magneticGame.com"
         minSdkVersion 16
@@ -16,6 +15,21 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+        // add the code from below line.
+        applicationVariants.all{
+                // this method is use to rename your all apk weather
+                // it may be signed or unsigned(debug apk)
+            variant ->
+                variant.outputs.each{
+                        // on below line we are setting a
+                        // name to our apk as GFG.apk
+                    output->
+                        def name = "MagneticGame.apk"
+                        // on below line we are setting the
+                        // outputFile Name to our apk file.
+                        output.outputFileName = name
+                }
         }
     }
     compileOptions {

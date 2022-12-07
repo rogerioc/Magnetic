@@ -51,6 +51,7 @@ captures/
 .idea/codeStyles/
 .idea/
 import-summary.txt
+.DS_Store
 # Keystore files
 # Uncomment the following lines if you do not want to check your keystore files in.
 #*.jks

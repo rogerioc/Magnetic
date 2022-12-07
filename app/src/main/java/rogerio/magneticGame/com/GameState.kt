@@ -4,5 +4,5 @@ enum class GameState {
     Pause,
     Count,
     Game,
-    SpExplode
+    KillShip
 }

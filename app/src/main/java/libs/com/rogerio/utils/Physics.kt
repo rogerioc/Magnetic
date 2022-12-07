@@ -74,10 +74,7 @@ object Physics {
 
 
     fun collide(obj1: SpriteSimpleInfoData, obj2: SpriteSimpleInfoData): Boolean {
-
         return if (obj1.rect.intersect(obj2.rect)) true else false
-
-
     }
 
     fun collide(obj1: Sprite, obj2: Sprite): Boolean {
@@ -97,13 +94,9 @@ object Physics {
         val wX = (obj1.position!!.x + obj1.width).toInt()
         val h = (obj1.position!!.y + obj1.height).toInt()
         val dimension = obj2.x >= obj1.position!!.x && obj2.x < wX
-
-
         return if (dimension && obj2.y >= obj1.position!!.y && obj2.y <= h) {
-            true
+            return true
         } else false
-
-
     }
 
 }

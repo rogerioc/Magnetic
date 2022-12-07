@@ -11,15 +11,17 @@ import libs.com.rogerio.utils.*
 import rogerio.magneticGame.com.GameState
 import rogerio.magneticGame.com.R
 import java.util.ArrayList
+import kotlin.math.roundToInt
 
 class MagneticCore(
     private val mContext: Context
     ): Runnable {
     companion object {
-        const val fireThreshold = 20
-        const val meteorThreshold = 10
+        const val fireThreshold = 4
+        const val meteorThreshold = 2
     }
 
+    private var firstMeteorSpeed = 0.0
     private var larguraTela: Int = 0
     private var alturaTela: Int = 0
     private var fireSpeed = 6.0
@@ -47,7 +49,7 @@ class MagneticCore(
     private val idExplodes: ArrayList<Int>
     private val mPaint: Paint
     //Dados Painel
-    private val score = 0
+    private var score = 0
 
     private var m_State: GameState? = null
     private var count: Int = 0
@@ -82,6 +84,7 @@ class MagneticCore(
         lstMeteors = ArrayList()
         mPaint = Paint()
         mPaint.setARGB(255, 255, 255, 255)
+        mPaint.textSize = 100.0f
         m_State = GameState.Game
         count = 5
     }
@@ -108,13 +111,22 @@ class MagneticCore(
         when (m_State) {
             GameState.Game -> game(canvas)
         }
+        drawExplodes(canvas)
+        painel(canvas)
+    }
 
+    private fun drawExplodes(canvas: Canvas) {
         synchronized(lstExplodes) {
             val expl = lstExplodes.iterator()
             while (expl.hasNext()) {
                 val ex = expl.next()
                 if (ex.frame < idExplodes.size) {
-                    canvas.drawBitmap(getImage(idExplodes[ex.frame]), ex.x.toFloat(), ex.y.toFloat(), null)
+                    canvas.drawBitmap(
+                        getImage(idExplodes[ex.frame]),
+                        ex.x.toFloat(),
+                        ex.y.toFloat(),
+                        null
+                    )
                     if (ex.time > 1) {
                         ex.frame++
                         ex.time = 0
@@ -126,8 +138,6 @@ class MagneticCore(
                 }
             }
         }
-
-        painel(canvas)
     }
 
     protected fun game(canvas: Canvas) {
@@ -175,12 +185,12 @@ class MagneticCore(
         // Display status and messages.
         val fontSize = mPaint.textSize
 
-        canvas.drawText("Score: $score", fontSize, mPaint.textSize,
+        canvas.drawText("Score: $score", 10.0f, 10.0f+mPaint.textSize,
             mPaint)
         //canvas.drawText("Ships: " + shipsLeft, fontSize, height - fontSize,
         //mPaint);
-        canvas.drawText("" + count, larguraTela / 2 - mPaint.textSize / 2, alturaTela / 2 - mPaint.textSize / 2,
-            mPaint)
+//        canvas.drawText("" + count, larguraTela / 2 - mPaint.textSize / 2, alturaTela / 2 - mPaint.textSize / 2,
+//            mPaint)
         //String str = "High: " + highScore;
 
     }
@@ -209,6 +219,7 @@ class MagneticCore(
         mSpSpaceShip.w = mSpaceShip.width
         fireSpeed = (larguraTela/alturaTela).toDouble() * fireThreshold
         meteorSpeed = (larguraTela/alturaTela).toDouble() * meteorThreshold
+        firstMeteorSpeed = meteorSpeed
         m_iniTime = SystemClock.currentThreadTimeMillis()
         generateMeteorsList()
         val th = Thread(this)
@@ -261,16 +272,19 @@ class MagneticCore(
         when (m_State) {
             GameState.Game -> {
                 if (lstMeteors.size == 0) {
+                    meteorSpeed *= 2
                     generateMeteorsList()
                 }
                 moveBullets()
                 updateMeteors()
             }
 
-            GameState.SpExplode -> if (lstExplodes.size == 0) {
+            GameState.KillShip -> if (lstExplodes.size == 0) {
                 m_State = GameState.Game
                 mSpSpaceShip.kill = false
-                generateNewPostions()
+                meteorSpeed = firstMeteorSpeed
+                score = 0
+                generateNewMeteorsPostions()
             }
             GameState.Count -> {
                 val time = SystemClock.currentThreadTimeMillis()
@@ -309,6 +323,7 @@ class MagneticCore(
                     if (Physics.collide(bullet, m)) {
                         m.kill = true
                         bullet.kill = true
+                        score++
                         Log.i(tag, "Colidiu")
                     }
 
@@ -355,7 +370,7 @@ class MagneticCore(
                     m.kill = true
                     mSpSpaceShip.kill = true
                     Log.i(tag, "Colidiu nave")
-                    m_State = GameState.SpExplode
+                    m_State = GameState.KillShip
                     geraExplode(mSpSpaceShip.x, mSpSpaceShip.y)
                 }
 
@@ -367,13 +382,12 @@ class MagneticCore(
     /**
      *
      */
-    private fun generateNewPostions() {
+    private fun generateNewMeteorsPostions() {
         synchronized(lstMeteors) {
             val mIter = lstMeteors.iterator()
             while (mIter.hasNext()) {
                 val m = mIter.next()
                 meteorPositions(m)
-
                 //Log.i(tag, "Meteor "+ m.x + " "+m.y);
             }
         }
@@ -404,7 +418,7 @@ class MagneticCore(
 
             m.w = mMeteor!!.width
             m.h = mMeteor!!.height
-            m.speed = meteorSpeed
+            m.speed = generateVelocity()
             /*if (i % 4 == 0) {
 				m.speed += mNivel * 2;
 			}*/
@@ -412,6 +426,13 @@ class MagneticCore(
             m.kill = false
             lstMeteors.add(m)
         }
+    }
+
+    private fun generateVelocity(): Double {
+        if (Math.random() > 0.5 ) {
+            return meteorSpeed / 1.5
+        }
+        return meteorSpeed
     }
 
     /**
@@ -438,7 +459,7 @@ class MagneticCore(
             handleGame.sendEmptyMessage(0)
 
             try {
-                Thread.sleep(100)
+                Thread.sleep(10)
             } catch (e: InterruptedException) {
                 // FIXME Auto-generated catch block
                 e.printStackTrace()
